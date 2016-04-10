@@ -57,6 +57,10 @@ public class Student implements Serializable {
 	@Column(name = "password", length = 50)
 	private String password;
 
+	@Column(name = "status", length = 1)
+	private Character status;
+
+	
 	/**
 	 * @return the id
 	 */
@@ -221,4 +225,19 @@ public class Student implements Serializable {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	/**
+	 * @return the status
+	 */
+	public Character getStatus() {
+		return status;
+	}
+
+	/**
+	 * @param status the status to set
+	 */
+	public void setStatus(Character status) {
+		this.status = status;
+	}
+	
 }
