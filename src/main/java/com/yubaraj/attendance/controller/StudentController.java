@@ -34,8 +34,8 @@ public class StudentController {
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
 	public ResponseEntity<Object> register(@RequestBody StudentRegisterDto studentRegisterDto) {
 		LOGGER.info("Registering student.");
-		studentService.register(studentRegisterDto);
-		return new ResponseEntity<Object>(new ResponseDto("SUCCESS"), HttpStatus.OK);
+		ResponseDto response=studentService.register(studentRegisterDto);
+		return new ResponseEntity<Object>(response, HttpStatus.OK);
 	}
 	
 	@RequestMapping(value = "/view", method = RequestMethod.GET)

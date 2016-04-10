@@ -18,4 +18,6 @@ import com.yubaraj.attendance.entity.Student;
 @Repository
 public interface StudentRepository extends JpaRepository<Student, Long> {
 
+	Student findByusername(String username);
+
 }

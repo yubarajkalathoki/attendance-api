@@ -1,6 +1,4 @@
-/**
- * 
- */
+
 package com.yubaraj.attendance.util;
 
 /**
@@ -14,4 +12,7 @@ package com.yubaraj.attendance.util;
 public class Constant {
 	public static final Character ACTIVE = 'Y';
 	public static final Character BLOCKED = 'B';
+
+	public static final String SUCCESS = "SUCCESS";
+	public static final String FAILLURE = "FAILLURE";
 }
